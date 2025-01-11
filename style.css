@@ -1,0 +1,87 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    background: url('https://images.pexels.com/photos/416920/pexels-photo-416920.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center center fixed;
+    background-size: cover;
+
+    margin: 0;
+    color: #e0e0e0; /* Light text for contrast */
+}
+
+.stopwatch {
+    background: rgba(44, 47, 56, 0.7); /* Semi-transparent dark background for the container */
+    border: 2px solid #5c6b7d; /* Subtle border */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7); /* Darker shadow for a more pronounced effect */
+    text-align: center;
+    padding: 20px;
+    max-width: 350px;
+    width: 100%;
+    backdrop-filter: blur(10px); /* Blur effect for a more modern look */
+}
+
+.time {
+    border: none;
+    font-size: 55px; /* Bigger font for better readability */
+    margin-bottom: 20px;
+    color: #ffffff; /* Light text for contrast */
+    font-weight: bold;
+    letter-spacing: 2px; /* Slight spacing for a more elegant feel */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); /* Subtle text shadow for depth */
+}
+
+.buttons button {
+    font-size: 18px;
+    padding: 12px 25px; /* Larger padding for more clickable area */
+    margin: 8px;
+    border: none;
+    border-radius: 8px;
+    background: #4b5b6b; /* Muted dark blue for the button background */
+    color: #ffffff;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.buttons button:hover {
+    background: #3a4751; /* Darker shade for hover */
+    transform: scale(1.05); /* Slight scale effect for a creative touch */
+}
+
+#label {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+#display{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#label p {
+    margin-bottom: 0;
+    font-size: 16px;
+    color: #a0a0a0; /* Lighter grey for text, easy on the eyes */
+}
+
+@media (max-width: 768px) {
+    .stopwatch {
+        max-width: 250px; /* Adjust the size for mobile screens */
+    }
+
+    .time {
+        font-size: 38px; /* Adjust font size for smaller screens */
+    }
+
+    .buttons button {
+        font-size: 16px; /* Adjust button text size for mobile */
+    }
+}
