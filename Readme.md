@@ -12,7 +12,7 @@ This is a simple and stylish stopwatch built using HTML, CSS, and JavaScript. It
 
 ## Screenshots
 
-![Stopwatch Screenshot](/Stopwatch-Tutorial/Screenshot%202025-01-11%20055132.png)
+![Stopwatch Screenshot](/Screenshot%202025-01-11%20055132.png)
 
 ## InstallatioN
 
